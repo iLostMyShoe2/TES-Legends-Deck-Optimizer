@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Lanes.fs" />
+    <Compile Include="Keywords.fs" />
+    <Compile Include="Cards.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>
 
