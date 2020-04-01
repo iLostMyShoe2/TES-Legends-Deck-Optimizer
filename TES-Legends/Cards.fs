@@ -6,12 +6,6 @@ type CardType =
     | Item
     | Support
 
-type CardSubType =
-    | Skeleton
-    | Dragon
-    | Minotaur
-    | Khajiit
-
 type CardAttributes =
     | Strength
     | Intelligence
@@ -54,6 +48,14 @@ type CardUnique =
     | Unique
     | NotUnique
 
+
+type Animal =
+    | Wolf
+    | Beast
+    | Reptile
+    | Lizard
+    | Fish
+
 type Race =
     | Argonian
     | Breton
@@ -63,12 +65,54 @@ type Race =
     | Khajiit
     | Nord
     | Orc
+    | Goblin
+    | Ogre
     | Redguard
     | WoodElf
+    | Dragon
+    | Mantikora
+    | Defense
+    | Animal
+    | Daedra
+    | Grummite
+    | Vampire
+    | God
+    | AshCreature
+    | Nereid
+    | Spriggan
+    | Wraith
+    | Skeleton
+    | Spirit
+    | Atronach
+    | Fabricant
+    | Wamasu
+    | Harpy
+    | Chaurus
+    | Centaur
+    | Minotaur
+    | Elytra
+    | Falmer
+    | Lurcher
+    | Spider
+    | Troll
+    | Portal
+    | Mummy
+    | Werewolf
+    | Mammoth
+    | Ayleid
+    | Imp
+    | Dwemer
+    | Factotum
+    | Automaton
+    | Dreugh
+    | Reachman
+    | Mudcrab
+    | Skeever
 
 type Card = {
     Name: string
     Description: string
+    CardType: CardType
     Races: Race list
 }
 
