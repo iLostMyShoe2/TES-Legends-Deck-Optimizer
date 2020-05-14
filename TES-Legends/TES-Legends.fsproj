@@ -1,15 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>TES_Legends</RootNamespace>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="Lanes.fs" />
     <Compile Include="Keywords.fs" />
+    <Compile Include="Effects.fs" />
     <Compile Include="Cards.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>
-
 </Project>

@@ -1,4 +1,6 @@
 ﻿module Cards
+open Keywords
+open Effects
 
 type CardType =
     | Creature
@@ -50,11 +52,21 @@ type CardUnique =
 
 
 type Animal =
-    | Wolf
     | Beast
-    | Reptile
-    | Lizard
     | Fish
+    | Mammoth
+    | Mudcrab
+    | Netch
+    | Reptile
+    | Spider
+    | Skeever
+    | Wolf
+
+type Undead =
+    | Mummy
+    | Skeleton
+    | Spirit
+    | Vampire
 
 type Race =
     | Argonian
@@ -65,54 +77,62 @@ type Race =
     | Khajiit
     | Nord
     | Orc
-    | Goblin
-    | Ogre
     | Redguard
     | WoodElf
-    | Dragon
-    | Mantikora
-    | Defense
-    | Animal
-    | Daedra
-    | Grummite
-    | Vampire
-    | God
+
+type OtherTypes =
     | AshCreature
-    | Nereid
-    | Spriggan
-    | Wraith
-    | Skeleton
-    | Spirit
     | Atronach
-    | Fabricant
-    | Wamasu
-    | Harpy
-    | Chaurus
-    | Centaur
-    | Minotaur
-    | Elytra
-    | Falmer
-    | Lurcher
-    | Spider
-    | Troll
-    | Portal
-    | Mummy
-    | Werewolf
-    | Mammoth
-    | Ayleid
-    | Imp
-    | Dwemer
-    | Factotum
     | Automaton
+    | Ayleid
+    | Centaur
+    | Chaurus
+    | Daedra 
+    | Defense
+    | Dragon
     | Dreugh
-    | Reachman
-    | Mudcrab
-    | Skeever
+    | Dwemer 
+    | Elytra 
+    | Falmer
+    | Fabricant 
+    | Factotum 
+    | Gargoyle 
+    | Giant 
+    | Goblin 
+    | God 
+    | Grummite 
+    | Harpy 
+    | Imp 
+    | Insect 
+    | Kwama 
+    | Lurcher 
+    | Mantikora 
+    | Minotaur 
+    | Nereid 
+    | Ogre 
+    | Pastry 
+    | Portal 
+    | Reachman 
+    | Spriggan 
+    | Troll 
+    | Wamasu 
+    | Werewolf 
+    | Wraith
+
+type CreatureType =
+    | None
+    | Race of Race
+    | Undead of Undead
+    | Animal of Animal    
+    | OtherTypes of OtherTypes
+    | Multiple of CreatureType list
 
 type Card = {
     Name: string
     Description: string
     CardType: CardType
-    Races: Race list
+    CreatureType: CreatureType
+    Effects: Effect list
+    Keywords: Keyword list
 }
 

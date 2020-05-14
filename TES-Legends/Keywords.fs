@@ -9,4 +9,5 @@ type Keyword =
     | Guard
     | Rally
     | Regenerate
+    | Mobilize
 
