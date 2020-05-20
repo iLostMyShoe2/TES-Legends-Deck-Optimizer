@@ -9,5 +9,6 @@
     <Compile Include="Effects.fs" />
     <Compile Include="Cards.fs" />
     <Compile Include="Library.fs" />
+    <Compile Include="playground.fsx" />
   </ItemGroup>
 </Project>
